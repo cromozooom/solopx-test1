@@ -5,4 +5,4 @@ Image: name of the image
 Subtitle: my subtitle
 ---
 
-vreau sa ofer 01
+oferta01
