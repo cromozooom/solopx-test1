@@ -3,10 +3,17 @@ layout: default
 ---
 
 <div class="home">
-
+  <p>{{site.sliders}}</p>
+  <ul>
+    {% for slide in site.sliders %}
+      <li>
+        {{ slide.subtitle }}
+        
+      </li>
+    {% endfor %}
+  </ul>
   <h1 class="page-heading">Posts</h1>
-
-  <!--ul class="post-list">
+  <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -14,16 +21,11 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        <p>test</p>
       </li>
     {% endfor %}
-  </ul-->
-
-  <ul class="post-list">
-    {% for post in site.sliders %}
-      <p>{% post.url %}</p>
-    {% endfor %}
   </ul>
-
+  
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
