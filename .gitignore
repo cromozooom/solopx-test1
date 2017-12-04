@@ -1,2 +1,5 @@
 # Logs
+.sass-cache
+
+# Build
 _site
