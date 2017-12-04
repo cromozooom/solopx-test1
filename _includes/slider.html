@@ -1,9 +1,12 @@
-<p>{{site.sliders}}</p>
+<!--p>{{site.sliders}}</p-->
 <ul>
 	{% for item in site.sliders %}
-		<li>
-			{{ item.subtitle }}
-			
-		</li>
+		{% if item.visible == false %}
+			<li>
+				<p>{{ item.content }}</p>
+				{{ item.Subtitle }}
+			</li>
+			{% else %}
+		{% endif %}	
 	{% endfor %}
 </ul>
