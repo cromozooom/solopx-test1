@@ -1,6 +1,8 @@
 ---
-title: Slider2
+title: Oferta02
 date: 2017-12-04 00:04:00 Z
+image: 
+Subtitle: my subtitle 02
 ---
 
-slider 2 description
+oferta 02 description
